@@ -76,6 +76,14 @@
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
+					<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.4.0</version>
+    <configuration>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </configuration>
+</plugin>
                 </configuration>
             </plugin>
             <plugin>
